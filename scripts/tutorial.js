@@ -16,5 +16,5 @@ function showText(index){
 }
 
 function homepage(){
-    window.location.href = "homepage.html";
+    window.location.href = "../index.html";
 }

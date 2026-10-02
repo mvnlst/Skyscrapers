@@ -32,6 +32,7 @@ window.addEventListener('orientationchange', check_screen, true);
 function setLevel(someLevel){
     currentLevel = someLevel;
 }
+
 function homepage(){
     close_animation(2);
     setTimeout(redirect, 2000, "homepage");
@@ -47,6 +48,8 @@ function redirect(string){
     if(string == "play") {
         totalString = `${string}.html?level=${currentLevel + 1}`
         location.href = totalString;
+    } else if (string == "homepage") {
+        totalString = `../index.html`
     } else {
         location.href = `${string}.html`;
     }
