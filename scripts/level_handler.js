@@ -35,6 +35,7 @@ function setLevel(someLevel){
 
 function homepage(){
     close_animation(2);
+    console.log("what")
     setTimeout(redirect, 2000, "homepage");
 }
 
@@ -50,6 +51,7 @@ function redirect(string){
         location.href = totalString;
     } else if (string == "homepage") {
         totalString = `../index.html`
+        location.href = totalString;
     } else {
         location.href = `${string}.html`;
     }
